@@ -8,3 +8,9 @@ Encryption is a two-way process, and passwords should be stored in a way that th
 Here’s an example using the bcrypt library, which is a popular choice for secure password hashing in Python. You can install it using:
 
 Then, you can use it in your Python code like pws.py file or can  directly downlaod and run.
+
+hash_password takes a password as input, generates a random salt, and hashes the password with the salt. check_password is used to check if a given password matches a stored hashed password.
+
+Remember to store only the hashed password in your database, not the actual user password.
+
+When a user tries to log in, you hash the entered password using the same salt and compare it to the stored hashed password.
