@@ -14,3 +14,9 @@ hash_password takes a password as input, generates a random salt, and hashes the
 Remember to store only the hashed password in your database, not the actual user password.
 
 When a user tries to log in, you hash the entered password using the same salt and compare it to the stored hashed password.
+
+Why We use bcrypt?
+
+bcrypt is a good choice because it incorporates a salt and is computationally expensive, making it resistant to brute force and rainbow table attacks.
+
+
